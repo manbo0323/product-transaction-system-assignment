@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "createdAt": "2024-07-15T01:03:34.034836+08:00",
+    "updatedAt": "2024-07-15T01:03:34.034836+08:00",
+    "name": "Manbo Yu",
+    "email": "manbo.yu@test.com",
+    "status": "ACTIVE",
+    "accounts": [
+      {
+        "id": 2,
+        "createdAt": "2024-07-15T01:03:34.034836+08:00",
+        "updatedAt": "2024-07-15T01:03:34.034836+08:00",
+        "userId": 1,
+        "currency": "TWD",
+        "balance": 500.00
+      },
+      {
+        "id": 1,
+        "createdAt": "2024-07-15T01:03:34.034836+08:00",
+        "updatedAt": "2024-07-15T01:03:34.034836+08:00",
+        "userId": 1,
+        "currency": "USD",
+        "balance": 75.00
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "createdAt": "2024-07-15T01:03:34.034836+08:00",
+    "updatedAt": "2024-07-15T01:03:34.034836+08:00",
+    "name": "Jonn Wang",
+    "email": "john.wang@test.com",
+    "status": "ACTIVE",
+    "accounts": [
+      {
+        "id": 4,
+        "createdAt": "2024-07-15T01:03:34.034836+08:00",
+        "updatedAt": "2024-07-15T01:03:34.034836+08:00",
+        "userId": 2,
+        "currency": "TWD",
+        "balance": 150.00
+      },
+      {
+        "id": 3,
+        "createdAt": "2024-07-15T01:03:34.034836+08:00",
+        "updatedAt": "2024-07-15T01:03:34.034836+08:00",
+        "userId": 2,
+        "currency": "USD",
+        "balance": 5.00
+      }
+    ]
+  }
+]

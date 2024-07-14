@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - include:
+      file: database/changes/table/t_merchant.sql
+  - include:
+      file: database/changes/table/t_merchant_account.sql
+  - include:
+      file: database/changes/table/t_merchant_product.sql
+  - include:
+      file: database/changes/table/t_merchant_purchase_log.sql
+  - include:
+      file: database/changes/data/t_merchant_data.sql

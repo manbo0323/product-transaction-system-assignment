@@ -1,0 +1,27 @@
+server:
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+  port: 8080
+  shutdown: graceful
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: user-service
+          uri: ${app.user.endpoint}
+          predicates:
+            - Path=/api/users/**
+        - id: merchant-service
+          uri: ${app.merchant.endpoint}
+          predicates:
+            - Path=/api/merchants/**
+
+app:
+  user:
+    endpoint: http://localhost:8100/api
+  merchant:
+    endpoint: http://127.0.0.1:8101/api

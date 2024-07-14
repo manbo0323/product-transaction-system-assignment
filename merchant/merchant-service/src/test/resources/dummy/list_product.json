@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "createdAt": "2024-07-15T02:29:10.966336+08:00",
+    "updatedAt": "2024-07-15T02:29:10.966336+08:00",
+    "sku": "HOODIE-BLUE-S",
+    "name": "hoodie coat",
+    "price": 6.00,
+    "currency": "USD",
+    "quantity": 10,
+    "status": "ACTIVE",
+    "merchant": {
+      "id": 1,
+      "name": "T-SHIRT Shop",
+      "email": "t.shirt@shop.com"
+    }
+  },
+  {
+    "id": 2,
+    "createdAt": "2024-07-15T02:29:10.966336+08:00",
+    "updatedAt": "2024-07-15T02:29:10.966336+08:00",
+    "sku": "TSHIRT-BLACK-L",
+    "name": "long sleeve T-shirts",
+    "price": 3.00,
+    "currency": "USD",
+    "quantity": 15,
+    "status": "ACTIVE",
+    "merchant": {
+      "id": 1,
+      "name": "T-SHIRT Shop",
+      "email": "t.shirt@shop.com"
+    }
+  },
+  {
+    "id": 3,
+    "createdAt": "2024-07-15T02:29:10.966336+08:00",
+    "updatedAt": "2024-07-15T02:29:10.966336+08:00",
+    "sku": "TSHIRT-BLACK-XL",
+    "name": "short sleeve T-shirts",
+    "price": 2.50,
+    "currency": "USD",
+    "quantity": 30,
+    "status": "ACTIVE",
+    "merchant": {
+      "id": 1,
+      "name": "T-SHIRT Shop",
+      "email": "t.shirt@shop.com"
+    }
+  },
+  {
+    "id": 4,
+    "createdAt": "2024-07-15T02:29:10.966336+08:00",
+    "updatedAt": "2024-07-15T02:29:10.966336+08:00",
+    "sku": "SHOE-BLACK-M",
+    "name": "black shoes(M)",
+    "price": 15.50,
+    "currency": "USD",
+    "quantity": 30,
+    "status": "ACTIVE",
+    "merchant": {
+      "id": 2,
+      "name": "SHOES Shop",
+      "email": "shoes@shop.com"
+    }
+  },
+  {
+    "id": 5,
+    "createdAt": "2024-07-15T02:29:10.966336+08:00",
+    "updatedAt": "2024-07-15T02:29:10.966336+08:00",
+    "sku": "SHOE-BLACK-L",
+    "name": "black shoes(L)",
+    "price": 15.50,
+    "currency": "USD",
+    "quantity": 5,
+    "status": "ACTIVE",
+    "merchant": {
+      "id": 2,
+      "name": "SHOES Shop",
+      "email": "shoes@shop.com"
+    }
+  }
+]

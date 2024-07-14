@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: database/changes/table/t_user.sql
+  - include:
+      file: database/changes/table/t_user_account.sql
+  - include:
+      file: database/changes/data/t_user_data.sql

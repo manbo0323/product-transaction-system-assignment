@@ -1,0 +1,66 @@
+spring:
+  application:
+    name: user-service
+  profiles:
+    include: feign
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:testDB
+    username: sa
+    hikari:
+      maximumPoolSize: 20
+      minimumIdle: 2
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+        useLocalSessionState: true
+        rewriteBatchedStatements: true
+        cacheResultSetMetadata: true
+        cacheServerConfiguration: true
+        elideSetAutoCommits: true
+        maintainTimeStats: false
+  h2:
+    console:
+      enabled: true
+  liquibase:
+    enabled: true
+    change-log: classpath:/database/changelog-master.yaml
+  jpa:
+    database: H2
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+        order_inserts: true
+        order_updates: true
+        jdbc:
+          batch_size: 50
+        format_sql: true
+
+server:
+  servlet:
+    context-path: /api
+    encoding:
+      force: true
+      charset: utf-8
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+  port: 8100
+  shutdown: graceful
+  http2:
+    enabled: true
+
+common:
+  web:
+    access-log:
+      ignoreMessages: "/h2-console"
+
+app:
+  merchant:
+    endpoint: http://127.0.0.1:8101/api
