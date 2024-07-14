@@ -12,11 +12,50 @@ Users can purchase products from the merchant's inventory using their prepaid ca
 ## Prerequisites
 
 - Java 21 or higher installed.
+- Maven installed.
 
 ## Setup and Running
 
 1. **Clone the repository**:
 
 ```bash
-git clone <repository-url>
-cd product-transaction-system
+git clone git@github.com:manbo0323/product-transaction-system-assignment.git
+cd product-transaction-system-assignment
+```
+2. **Maven Package**:
+
+```bash
+mvn clean package
+
+### run merchant-service
+cd merchant/merchant-service
+mvn spring-boot:run
+
+### run user-service
+cd user/user-service
+mvn spring-boot:run
+
+### run api-gateway
+cd api-gateway
+mvn spring-boot:run
+
+```
+
+## API Endpoints
+
+**API Gateway: http://localhost:8080/api**:
+
+**user-service**
+
+- POST /users/list
+- PUT /users/{userId}/recharge
+- PUT /users/{userId}/purchase
+
+**merchant-service**
+
+- POST /merchants/list
+- POST /merchants/products/list
+- POST /merchants/{merchantId}/products
+- GET /merchants/{merchantId}/products
+- POST /merchants/{merchantId}/products/{productId}/place-order
+

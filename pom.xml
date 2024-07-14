@@ -10,11 +10,11 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.manbo</groupId>
-	<artifactId>apcapital-assignment</artifactId>
+	<artifactId>product-transaction-system-assignment</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>apcapital-assignment</name>
-	<description>apcapital-assignment</description>
+	<name>product-transaction-system-assignment</name>
+	<description>product-transaction-system-assignment</description>
 
 	<modules>
 		<module>user</module>
